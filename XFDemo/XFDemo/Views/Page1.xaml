@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFDemo.Views.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Xoay chu"
+                   TextColor="Blue"
+                   FontSize="20"
+                   Rotation="{Binding Source={x:Reference slider},Path=Value}" />
+            <Slider x:Name="slider"
+                    Minimum="0"
+                    Maximum="360" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

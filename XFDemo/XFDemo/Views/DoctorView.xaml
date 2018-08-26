@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFDemo.Views.DoctorView">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="Save"
+                     Text="Save"
+                     Clicked="Save_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView >
+        <StackLayout>
+            <Entry  Text="{Binding Name}" />
+            <Entry Text="{Binding Title, Mode=OneWay}"/>
+            <Entry Text="{Binding Address}" />
+            <Entry  Text="{Binding PhoneNumber}" />
+            <Button Text="Call Phone" Clicked="CallPhone_Clicked" />
+            <Button Text="Xoay Chu"
+                    Clicked="SMSPhone_Clicked" />
+            <Button Text="Save"
+                    Clicked="Save_Clicked" />
+            <Button Text="Delete"
+                    Clicked="Delete_Clicked" />
+          
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
